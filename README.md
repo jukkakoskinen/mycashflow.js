@@ -4,7 +4,6 @@
 
 A simple node module for working with the MyCashflow API. Please consult the original browseable documentation for more technical insight on API details.
 
-
 ### Usage
 
 First, require the node module:
@@ -71,3 +70,9 @@ The client conforms to MyCashflow API version 0.4.0.
 * Versions
 	* get
 	* list
+	
+### Development
+
+Running the tests:
+
+	npm test

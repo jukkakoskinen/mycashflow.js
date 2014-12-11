@@ -4,11 +4,14 @@
   "description": "MyCashflow API client",
   "main": "./lib/client.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "nodeunit test"
   },
   "author": "Jukka Koskinen <jukka@koskinen.io>",
   "license": "MIT",
   "dependencies": {
     "request": "^2.50.0"
+  },
+  "devDependencies": {
+    "nodeunit": "^0.9.0"
   }
 }
