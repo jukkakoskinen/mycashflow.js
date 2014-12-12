@@ -2,7 +2,7 @@
   "name": "node-mycashflow",
   "version": "0.1.0",
   "description": "MyCashflow API client",
-  "main": "./lib/client.js",
+  "main": "index.js",
   "scripts": {
     "test": "nodeunit test"
   },
