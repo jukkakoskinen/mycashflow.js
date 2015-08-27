@@ -32,6 +32,17 @@ Pass `debug: true` to enable console output.
 
 The client conforms to MyCashflow API version 0.4.0.
 
+* Brands
+	* get
+	* list
+	* create
+	* update
+	* delete
+* Categories
+	* list
+	* get
+	* update
+	* subcategories
 * Customers
 	* get
 	* list
@@ -40,12 +51,6 @@ The client conforms to MyCashflow API version 0.4.0.
 * Customer Groups
 	* list
 	* get
-	* create
-	* update
-	* delete
-* Brands
-	* get
-	* list
 	* create
 	* update
 	* delete
