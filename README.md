@@ -6,7 +6,7 @@ A simple node module for working with the MyCashflow API. Please consult the ori
 
 First, require the node module:
 
-	var MyCashflow = require('node-mycashflow');
+	var MyCashflow = require('mycashflow');
 
 Configure through `env vars`:
 
