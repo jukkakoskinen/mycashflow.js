@@ -1,5 +1,3 @@
-![MyCashflow](mycashflow.png "MyCashflow")
-
 # MyCashflow API
 
 A simple node module for working with the MyCashflow API. Please consult the original browseable documentation for more technical insight on API details.
@@ -11,13 +9,13 @@ First, require the node module:
 	var MyCashflow = require('node-mycashflow');
 
 Configure through `env vars`:
-	
+
 	export MYCASHFLOW_API_USER = x
 	export MYCASHFLOW_API_KEY  = y
 	export MYCASHFLOW_API_URI  = z
 
-	var myCashflow = new MyCashflow();	
-	
+	var myCashflow = new MyCashflow();
+
 Or pass a configuration object:
 
 	var myCashflow = new MyCashflow({
@@ -25,7 +23,7 @@ Or pass a configuration object:
 		apiKey: ..., // Shop API key
 		apiUri: ...  // Shop API endpoint (https://shop.com/api/v1/)
 	});
-	
+
 Pass `debug: true` to enable console output.
 
 ### Implemented Resources
@@ -47,7 +45,7 @@ The client conforms to MyCashflow API version 0.4.0.
 	* get
 	* list
 	* update
-	* secondaryAddresses	
+	* secondaryAddresses
 * Customer Groups
 	* list
 	* get
@@ -75,7 +73,7 @@ The client conforms to MyCashflow API version 0.4.0.
 * Versions
 	* get
 	* list
-	
+
 ### Development
 
 Running the tests:
