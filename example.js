@@ -9,6 +9,6 @@ var myCashflow = new MyCashflow({
 });
 
 // Fetch some products.
-myCashflow.products.list({ page_size: 10 }, function(res) {
+myCashflow.products.list({ page_size: 10 }, function (res) {
   console.log(res);
 });
