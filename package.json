@@ -9,7 +9,7 @@
   "author": "Jukka Koskinen <jukka@koskinen.io>",
   "license": "MIT",
   "dependencies": {
-    "request": "^2.50.0"
+    "superagent": "^1.3.0"
   },
   "devDependencies": {
     "nodeunit": "^0.9.0"
