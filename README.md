@@ -10,11 +10,15 @@ First, require the node module:
 
 Configure through `env vars`:
 
-	export MYCASHFLOW_API_USER = x
-	export MYCASHFLOW_API_KEY  = y
-	export MYCASHFLOW_API_URI  = z
+```
+export MYCASHFLOW_API_USER = x
+export MYCASHFLOW_API_KEY  = y
+export MYCASHFLOW_API_URI  = z
+```
 
-	var myCashflow = new MyCashflow();
+```
+var myCashflow = new MyCashflow();
+```
 
 Or pass a configuration object:
 
