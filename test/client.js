@@ -1,5 +1,7 @@
+var nock = require('nock');
 var Client = require('../lib/client');
 var resources = require('../lib/resources');
+var superagent = require('superagent');
 
 module.exports = {
   setUp: function (callback) {
@@ -55,6 +57,15 @@ module.exports = {
     test.equal(this.client.buildUri(['test', 'y'], { a: 1, b: 2 }), 'shop.com/api/test/y?a=1&b=2');
     test.notEqual(this.client.buildUri(['false']), 'shop.com/api/test');
     test.done();
+  },
+
+  'knows how to handle a successful request': function(test) {
+    var apiMock = nock('https://shop.com').get('/test').reply(201, '{}', { 'Content-Type': 'application/json' });
+    this.client.call('get', 'https://shop.com/test', {}, function () { test.done(); });
+  },
+
+  'knows how to handle a failed request': function(test) {
+    var apiMock = nock('shop.com').get('/test').reply(400, {}, { 'Content-Type': 'application/json' });
+    this.client.call('get', 'https://shop.com/test', {}, {}, function () { test.done(); });
   }
 };
-
